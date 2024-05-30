@@ -1,0 +1,152 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 55em;
+    margin:0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.company-name {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    padding:8px;
+}
+
+.company-intro {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-section {
+    margin: 40px 0;
+}
+
+.team-section h3 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+}
+
+.member {
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+}
+
+.card {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    border-radius: 25px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 25px 25px 75px #d9d9d9, -25px -25px 75px #ffffff;
+}
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #777;
+    margin: 5px 0 15px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.back-to-top:hover {
+    background: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .member {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .member {
+        flex: 1 1 100%;
+    }
+
+    .team-section h3 {
+        font-size: 1.5em;
+    }
+
+    .company-name {
+        font-size: 2em;
+    }
+
+    .company-intro {
+        font-size: 1em;
+    }
+}
